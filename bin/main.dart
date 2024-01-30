@@ -1,12 +1,8 @@
 import "package:p11/class_mock_database_repository.dart";
 import "package:p11/class_user.dart";
 
-
-
-
-
 class MockDatabaseRepository {
-  // private attribute
+  // private attribute s
   //! Warum schlägt mir Dart vor, folg. Liste FINAL zu machen?
   final List<User> _users = [
     User("Kai", "pass123", "kai@example.com", 1, 25),
@@ -29,7 +25,6 @@ class MockDatabaseRepository {
   void deleteUser(User user) {
     _users.remove(user);
   }
-
 }
 
 void main() {
