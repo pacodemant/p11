@@ -1,3 +1,6 @@
+import 'package:p11/class_mock_database_repository.dart';
+import 'package:p11/class_user.dart';
+
 class User {
   String username;
   String password;
@@ -16,6 +19,8 @@ class User {
     print('login $username.');
   }
 }
+
+
 
 class MockDatabaseRepository {
   // private attribute
